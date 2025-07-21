@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <h1>🛍️ Ma Boutique</h1>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#" id="cart-link"
+          >Panier 🛒 (<span id="cart-count">0</span>)</a
+        >
+      </nav>
+    </header>
+
+    <!-- PRODUITS -->
+    <main>
+      <h2>Nos Produits</h2>
+      <section id="product-list" class="product-list">
+        <!-- Les produits seront générés par JS -->
+      </section>
+    </main>
+
+    <!-- PANIER -->
+    <aside id="cart-modal" class="hidden">
+      <h3>Votre Panier</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="cart-total">0.00 €</span></p>
+      <button id="checkout">Passer au paiement</button>
+      <button id="close-cart">Fermer</button>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Ma Boutique - Tous droits réservés</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
