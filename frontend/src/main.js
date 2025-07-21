@@ -87,11 +87,11 @@ productList.addEventListener("click", (e) => {
 const cartModal = document.getElementById("cart-modal");
 document.getElementById("cart-link").addEventListener("click", (e) => {
   e.preventDefault();
-  cartModal.classList.toggle("hidden");
+  cartModal.classList.toggle("visible");
 });
 
 document.getElementById("close-cart").addEventListener("click", () => {
-  cartModal.classList.add("hidden");
+  cartModal.classList.remove("visible");
 });
 
 // === CHECKOUT (futur paiement) ===
