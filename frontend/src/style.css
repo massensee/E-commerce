@@ -14,7 +14,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Poppins", Arial, sans-serif;
-  background: #f7f7f7;
+  background: url(../image/bottle-2032980_1280.jpg) no-repeat center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
   color: #333;
   line-height: 1.6;
 }
@@ -59,7 +62,7 @@ main h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #444;
+  color: #f1f1f1;
 }
 
 .product-list {
